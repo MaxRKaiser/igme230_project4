@@ -40,11 +40,85 @@ body {
     text-decoration: none; /* turns off underlining */
 }
 
-
-
 main {
     display: flex;
     flex-flow: row wrap;
     padding: 25px;
     border: 2px solid #21bde0;
+}
+
+
+#title {
+    width: 300px;
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 1px;
+    line-height: 80%;
+}
+
+.page_description {
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.showcase {
+    
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: flex-start; 
+    list-style: none; 
+    margin-bottom: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.showcase li {
+    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    font-weight: bold;
+    transition:all 2s ease;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 18px;
+}
+
+.showcase > a {
+    color: black; /* or the contrasting color of your choice */
+    text-decoration: none; /* turns off underlining */
+}
+
+.showcase > img {
+    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    font-weight: bold;
+    transition:all 0.7s ease;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+
+#showcaseImg {
+    width: 90%;
+    height: 90%;
+    border: 2px solid #21bde0;
+    z-index: 1;
+    transition:all 0.4s ease;
+}
+
+/*Grows and rotates element on hover*/
+.grow1:hover {
+    -webkit-transform: scale(1.2) rotateZ(-3deg);
+    -ms-transform: scale(1.2) rotateZ(-3deg);
+    transform: scale(1.2) rotateZ(-3deg);
 }
