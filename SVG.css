@@ -1,1 +1,50 @@
+html {
+    background-image: url("personalImage.jpg");
+}
 
+body {
+    width: 80%; 
+    margin: auto; 
+    background-color: #dddddd; 
+    font-family: Arial; 
+}
+
+.navigation {
+    background-color: #939393; 
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: flex-start; 
+    list-style: none; 
+    margin: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.navigation li {
+    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    font-weight: bold;
+    transition:all 0.3s ease;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.grow:hover {
+    font-size: 17px;
+    background: #3f3f3f;
+}
+
+.navigation a {
+    color: white; /* or the contrasting color of your choice */
+    text-decoration: none; /* turns off underlining */
+}
+
+
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 25px;
+    border: 2px solid #21bde0;
+}
