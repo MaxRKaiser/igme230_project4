@@ -155,3 +155,29 @@ input:hover {
     background: #595959;
     color: white;
 }
+
+.rotateLeft {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: spinLeft 6s infinite linear;
+}
+
+@-webkit-keyframes spinLeft {
+    0%  {-webkit-transform: rotate(360deg);}
+    100% {-webkit-transform: rotate(0deg);}   
+}
+
+.rotateRight {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: spinRight 6s infinite linear;
+}
+
+@-webkit-keyframes spinRight {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}

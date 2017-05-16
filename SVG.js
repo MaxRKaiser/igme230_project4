@@ -46,14 +46,22 @@ function animate1() {
     circle.setAttribute("r", newR);
 }
 
-function MousePos(e) {
-    var circle2 = document.getElementById("circle2");
-    var cx = circle2.getAttribute("cx");
-    var cy = circle2.getAttribute("cy");
-    var newX = MouseEvent.clientX;
-    var newY = MouseEvent.clientY;
-    circle2.setAttribute("cx", newX);
-    circle2.setAttribute("cy", newY);
+function RotateLeft() {
+    
+document.getElementById("rectangle1").classList.add("rotateLeft");
+document.getElementById("rectangle1").classList.remove("rotateRight");
+ 
 }
 
-document.addEventListener("click", MousePos);
+function RotateRight() {
+    
+document.getElementById("rectangle1").classList.add("rotateRight");
+ 
+}
+
+function stopRotate() {
+    
+document.getElementById("rectangle1").classList.remove("rotateLeft");
+document.getElementById("rectangle1").classList.remove("rotateRight");
+ 
+}
