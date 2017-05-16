@@ -65,3 +65,16 @@ document.getElementById("rectangle1").classList.remove("rotateLeft");
 document.getElementById("rectangle1").classList.remove("rotateRight");
  
 }
+
+var selectedElement = 0;
+var currentX = 0;
+var currentY = 0;
+
+function moveElement(evt) {
+    selectedElement = document.getElementById("circle2");
+    currentX = evt.clientX - 100;
+    currentY = evt.clientY - 100;
+    
+    selectedElement.setAttribute("cx", currentX); 
+    selectedElement.setAttribute("cy", currentY); 
+}

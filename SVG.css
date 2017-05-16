@@ -24,7 +24,7 @@ body {
 }
 
 .navigation li {
-    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    flex: 1;  
     font-weight: bold;
     transition:all 0.3s ease;
     padding-top: 1%;
@@ -37,8 +37,8 @@ body {
 }
 
 .navigation a {
-    color: white; /* or the contrasting color of your choice */
-    text-decoration: none; /* turns off underlining */
+    color: white; 
+    text-decoration: none; 
 }
 
 main {
@@ -87,7 +87,7 @@ main {
 }
 
 .showcase li {
-    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    flex: 1; 
     font-weight: bold;
     transition:all 2s ease;
     padding-top: 1%;
@@ -96,12 +96,12 @@ main {
 }
 
 .showcase > a {
-    color: black; /* or the contrasting color of your choice */
-    text-decoration: none; /* turns off underlining */
+    color: black; 
+    text-decoration: none; 
 }
 
 .showcase > img {
-    flex: 1; /* shorthand property that represents flex-grow of 1, flex-shrink of 1, and flex-basis of auto */ 
+    flex: 1;
     font-weight: bold;
     transition:all 0.7s ease;
     margin-bottom: 20px;
@@ -110,7 +110,7 @@ main {
     margin-top: -10px;
 }
 
-#showcaseImg {
+#showcaseImg1 {
     width: 90%;
     height: 90%;
     border: 2px solid #21bde0;
@@ -118,7 +118,23 @@ main {
     transition:all 0.4s ease;
 }
 
-/*Grows and rotates element on hover*/
+#showcaseImg2 {
+    width: 90%;
+    height: 90%;
+    border: 2px solid #21bde0;
+    z-index: 1;
+    transition:all 0.4s ease;
+}
+
+#showcaseImg3 {
+    width: 90%;
+    height: 90%;
+    border: 2px solid #21bde0;
+    z-index: 1;
+    transition:all 0.4s ease;
+}
+
+
 .grow1:hover {
     -webkit-transform: scale(1.2) rotateZ(-3deg);
     -ms-transform: scale(1.2) rotateZ(-3deg);
@@ -180,4 +196,17 @@ input:hover {
 @-webkit-keyframes spinRight {
     0%  {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg);}   
+}
+
+#workspace {
+    margin: 0px;
+    padding: 0px;
+}
+
+#chaseText {
+    z-index: 2;
+    text-align: center;
+    border-bottom: 1px double black;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }

@@ -21,8 +21,16 @@
     </header>
 
     <section>
-        <svg height="300" width="400">
-            <circle id="circle2" cx="200" cy="150" r="50" stroke="black" stroke-width="2" fill="#444444" />
+        <p id="chaseText">Click in the light space below to have the circle chase your mouse!</p>
+        <svg id="workspace"
+             height="500" width="920"
+             onmousedown="moveElement(evt)" >
+            <circle id="circle2"
+                cx="450" cy="250" r="50"
+                stroke="black" stroke-width="2" fill="#444444"
+                transform="matrix(1 0 0 1 0 0)"
+                   
+            />
         </svg>
         
     </section>
