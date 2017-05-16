@@ -133,7 +133,25 @@ main {
 svg {
     display: block;
     margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding: 10%;
+}
+
+#buttonSect {
+    margin: auto;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+input {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 16px;
+    background: #c1c1c1;
+}
+
+input:hover {
+    background: #595959;
+    color: white;
 }
