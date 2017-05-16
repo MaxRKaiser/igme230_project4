@@ -45,3 +45,15 @@ function animate1() {
     }
     circle.setAttribute("r", newR);
 }
+
+function MousePos(e) {
+    var circle2 = document.getElementById("circle2");
+    var cx = circle2.getAttribute("cx");
+    var cy = circle2.getAttribute("cy");
+    var newX = MouseEvent.clientX;
+    var newY = MouseEvent.clientY;
+    circle2.setAttribute("cx", newX);
+    circle2.setAttribute("cy", newY);
+}
+
+document.addEventListener("click", MousePos);
