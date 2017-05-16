@@ -1,13 +1,13 @@
 function grow() {
-    alert('Grow and shrink a circle on a click');
+    alert('Grow and shrink a circle on a click!');
     }
     
 function budding() {
-    alert('Move around and bud off copies');
+    alert('Have the circle chase your mouse!');
     }
     
 function cluster() {
-    alert('randomly generate moving objects');
+    alert('Control the spin of a shape!');
     }
 
 var timerFunction = null;
